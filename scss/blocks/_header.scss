@@ -71,10 +71,9 @@ transition:all 0.5s ease;
 }
 
 
-@media only screen and (max-width:1110px){
+@media only screen and (max-width:1440px){
   .header{
     &__container{
-      margin: 0;
       padding: 0% 20px;
       max-width: 768px;
     }
@@ -90,12 +89,12 @@ transition:all 0.5s ease;
   }
 }
 
-@media only screen and (max-width:767px){
+@media only screen and (max-width:768px){
   .header{
     margin: 0;
     padding: 22px 0;
   &__container{
-  max-width: 575px;
+  max-width: 375px;
   }
   &__logo{
     margin: 0 auto;
@@ -109,7 +108,7 @@ transition:all 0.5s ease;
     top: 0%;
     left: 0%;
     right: 0% ;
-    max-width: 100%;
+    max-width: 375px;
     background-color:rgb(138, 131, 131);
     transition: all 1s ease-in;
   }
