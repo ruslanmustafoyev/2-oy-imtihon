@@ -16,6 +16,14 @@
   align-items: center;
   justify-content: space-between;
   }
+  &__openMenu{
+    display: none;
+    font-size: 1.2rem;
+  }
+  &__closeMenu{
+    display: none;
+    font-size: 1.2rem;
+  }
   &__list{
     margin: 0;
     padding: 0;
@@ -60,4 +68,82 @@ transition:all 0.5s ease;
  color: #FCB72B;
  border: 2px solid #FCB72B;
   }
+}
+
+
+@media only screen and (max-width:1110px){
+  .header{
+    &__container{
+      margin: 0;
+      padding: 0% 20px;
+      max-width: 768px;
+    }
+    &__logo{
+      width: 108px;
+      height: 28px;
+    }
+    &__nav{
+      margin: 0%;
+      padding: 0%;
+      max-width: 550px;
+    }
+  }
+}
+
+@media only screen and (max-width:767px){
+  .header{
+    margin: 0;
+    padding: 22px 0;
+  &__container{
+  max-width: 575px;
+  }
+  &__logo{
+    margin: 0 auto;
+  }
+  &__nav{
+    padding: 5px 0;
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0% ;
+    max-width: 100%;
+    background-color:rgb(138, 131, 131);
+    transition: all 1s ease-in;
+  }
+  &__list{
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+    padding: 0%;
+    padding-bottom: 50px;
+    position: relative;
+    right:10px;
+  }
+  &__item{
+    margin-left: 32px;
+    padding: 3px 0;
+  }
+  &__link{
+    color:rgb(16, 14, 14);
+  }
+  &__closeMenu{
+    display:block;
+    position:absolute;
+    top: 24px;
+    right: 32px;
+  }
+  &__openMenu{
+    display: block;
+    position: absolute;
+    top: 24px;
+  }
+  &__btn{
+    color:rgb(15, 14, 14);
+    margin-bottom: 12px;
+  }
+  }
+
 }

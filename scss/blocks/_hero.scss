@@ -14,12 +14,9 @@ background-size:cover;
   &__desc{
     margin: 0;
     padding: 0;
-   position: relative;
-  top: 153px;
-  left: 165px;
-  background: url(../../images/yellow-arrow.png);
-  background-repeat: no-repeat;
-  background-position: center bottom;
+position: inherit;
+padding-top: 153px;
+  margin-left: 165px;
   }
 
   &__title{
@@ -39,14 +36,37 @@ max-width: 500px;
   padding: 0;
   margin-left: 95px;
   margin-top: 40px;
-  max-width: 350px;
+  width: 350px;
   font-family: 'Lexend Deca';
 font-style: normal;
 font-weight: 400;
 font-size: 15px;
 line-height: 25px;
+display: flex;
+align-items: center;
 color: #FFFFFF;
+
 }
+// &__text::before{
+//   content: "";
+//   background: url(../../images/yellow-linear.png);
+//   background-size: contain;
+//   width: 202px;
+//   height: 11px;
+//   position:absolute;
+//   left: 59px;
+// }
+// &__text::after{
+//   content: "";
+//   background:url(../../images/yellow-arrow.png) ;
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   width: 545px;
+//   height: 99px;
+//   position: absolute;
+//   left: 760px;
+//   top: 450px;
+// }
 &__btn{
   margin: 0;
   padding: 15px 40px;
@@ -55,5 +75,122 @@ color: #FFFFFF;
 }
 &__btn:hover{
  background-color: transparent;
+}
+}
+
+
+@media only screen and (max-width:1110px){
+  .hero{
+    margin: 0;
+    padding: 0%;
+
+    &__container{
+  margin: 0;
+  padding: 0;
+  max-width: 768px;
+ background-image: url(../../images/planshetheroimg.jpg);
+    }
+  &__desc{
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   background: none;
+
+  }
+  &__title{
+    margin: 0 auto;
+    margin-top: 132px;
+    padding: 0;
+    text-align: center;
+    max-width: 573px;
+  }
+  &__text{
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 24px;
+    text-align: center;
+    max-width: 550px;
+  }
+  &__text::before{
+  background: none;
+  position:absolute;
+  left: 59px;
+  }
+  &__text::after{
+    background: none;
+    position: absolute;
+    left: 760px;
+    top: 450px;
+    }
+  &__btn{
+  padding: 0%;
+    text-align: center;
+    padding:14px 39px;
+    margin: 0 auto;
+    margin-top:32px;
+  }
+  }
+}
+
+@media only screen and (max-width:768px){
+  .hero{
+    margin: 0;
+    padding: 0;
+  &__container{
+    margin: 0;
+    padding: 0;
+    max-width: 575px;
+  }
+  &__desc{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   background: none;
+  }
+  &__title{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 115px;
+    padding: 0;
+    max-width: 311px;
+    font-size: 40px;
+line-height: 40px;
+text-align: center;
+letter-spacing: -1.78571px;
+  }
+  &__text{
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 24px;
+    max-width: 311px;
+    font-size: 15px;
+line-height: 25px;
+text-align: center;
+  }
+  &__text::before{
+    background: none;
+    position:absolute;
+    left: 59px;
+    }
+    &__text::after{
+      background: none;
+      position: absolute;
+      left: 760px;
+      top: 450px;
+
+      }
+  &__btn{
+    margin: 0 auto;
+    margin-top: 34px;
+  }
 }
 }
