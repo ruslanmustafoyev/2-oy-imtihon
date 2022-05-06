@@ -1,0 +1,108 @@
+.sign{
+  margin: 0;
+  padding: 0;
+  &__container{
+    padding: 0%;
+    background: url(../../images/sign-up.png);
+    height: 300px;
+  }
+  &__item{
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 178px;
+    max-width: 1050px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+&__title{
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+  max-width: 415px;
+  font-family: 'Space Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+letter-spacing: -2.14286px;
+color: #FFFFFF;
+}
+&__market{
+  margin: 0;
+  padding: 0;
+  width: 360px;
+  margin-top: 122px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+&__link{
+  width: 159px;
+  height: 56px;
+}
+}
+
+@media only screen and (max-width:1439px) {
+  .sign{
+    margin: 0;
+    padding: 0;
+    &__container{
+      padding: 0%;
+      max-width: 768px;
+      background: url(../../images/signbackfortab.png);
+      margin-top: 104px;
+    }
+    &__item{
+  flex-direction: column;
+  display: none;
+    }
+  }
+}
+
+@media only screen and (max-width:768px){
+  .sign{
+    margin: 0;
+    padding: 0;
+    &__container{
+      margin: 0% auto;
+      padding: 0%;
+      margin-top: 120px;
+  padding: 0%;
+  max-width: 375px;
+  background: url(../../images/mobilesignn.png);
+    }
+    &__item{
+      margin: 0;
+      padding: 0;
+      display:flex;
+      flex-direction: column;
+
+    }
+    &__title{
+      margin: 0;
+      padding: 0;
+    max-width: 311px;
+    margin-top: 88px;
+    font-family: 'Space Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 32px;
+text-align: center;
+letter-spacing: -1.42857px;
+color: #FFFFFF;
+    }
+    &__market{
+      margin: 0;
+      padding: 0;
+      margin-top: 40px;
+      width: 255px;
+      display: flex;
+      align-items: center;
+    }
+    &__link{
+      width: 120px;
+    }
+  }
+}
