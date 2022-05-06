@@ -1,0 +1,59 @@
+.hero{
+  margin: 0;
+  padding: 0;
+  &__container{
+    margin: 0 auto;
+    padding: 0%;
+    height: 650px;
+background: url(../../images/hero-img.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size:cover;
+  }
+
+  &__desc{
+    margin: 0;
+    padding: 0;
+   position: relative;
+  top: 153px;
+  left: 165px;
+  background: url(../../images/yellow-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  }
+
+  &__title{
+margin: 0;
+padding: 0;
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 56px;
+letter-spacing: -2.5px;
+color: #FFFFFF;
+max-width: 500px;
+}
+&__text{
+  margin: 0;
+  padding: 0;
+  margin-left: 95px;
+  margin-top: 40px;
+  max-width: 350px;
+  font-family: 'Lexend Deca';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+color: #FFFFFF;
+}
+&__btn{
+  margin: 0;
+  padding: 15px 40px;
+  margin-top: 40px;
+  margin-left: 95px;
+}
+&__btn:hover{
+ background-color: transparent;
+}
+}

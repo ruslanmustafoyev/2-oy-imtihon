@@ -1,0 +1,40 @@
+html{
+  height: 100%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after{
+ box-sizing: inherit;
+}
+body{
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+img{
+  display: inline-block;
+  height: auto;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+
+.container{
+  max-width: 1400px;
+  margin: 0% auto;
+  padding: 0% 20px;
+}
+.visually-hidden{
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
