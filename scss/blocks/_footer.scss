@@ -1,6 +1,15 @@
 .fa-facebook-square{color:#FCB72B;}
 .fa-twitter{color:#FCB72B;}
 .fa-instagram{color:#FCB72B;}
+.fa-facebook-square:hover{
+  color: white;
+}
+.fa-twitter:hover{
+  color: white;
+}
+.fa-instagram:hover{
+  color: white;
+}
 
 .footer{
   margin: 0;
@@ -40,6 +49,9 @@
     list-style: none;
     color: #939CAA;
     text-decoration: none;
+  }
+  &__link:hover{
+    color: #FCB72B;
   }
   &__icons{
 margin: 0;

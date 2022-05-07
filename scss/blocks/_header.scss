@@ -43,7 +43,7 @@
     font-size: 15px;
     line-height: 25px;
     color: #939CAA;
-    font-family: 'Space Mono';
+    font-family: 'space mono';
   }
   &__link:hover{
     color: #FCB72B;
@@ -52,7 +52,7 @@
   &__btn{
  margin: 0;
  padding:14px 39px;
- font-family: 'Space Mono';
+ font-family:  'Space Mono';
 font-style: normal;
 font-weight: 700;
 font-size: 15px;
@@ -61,10 +61,11 @@ text-align: center;
 color: #FFFFFF;
 background-color: #FCB72B;
 border: none;
-transition:all 0.5s ease;
+transition:all 0.5s ease-out;
   }
   &__btn:hover{
  background-color: white;
+ color:transparent;
  color: #FCB72B;
  border: 2px solid #FCB72B;
   }
